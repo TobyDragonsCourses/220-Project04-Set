@@ -17,7 +17,7 @@ public class SetTest {
     @Test
     public void testTreeSet(){
         fail("Not implemented yet");
-        //TODO: call all test methods on your ListSet
+        //TODO: call all test methods on your TreeSet
     }
 
     @Test
@@ -26,7 +26,6 @@ public class SetTest {
         //TODO: call all test methods on your ListSet
     }
 
-    @Test
     public void addContainsSizeTest(Set<String> testSet){
         assertEquals(0, testSet.size());
         assertFalse(testSet.contains("anything"));
@@ -52,7 +51,6 @@ public class SetTest {
         assertFalse(testSet.contains("Rufus"));
     }
 
-    @Test
     public void addContainsSizeTestLarge(Set<Integer> testSet){
         for (int i=0; i<597; i++){
             testSet.add(i);
@@ -75,7 +73,6 @@ public class SetTest {
         
     }
 
-    @Test
     public void toOrderedListTest(Set<String> testSet){
         testSet.add("Maria");
         testSet.add("George");
@@ -97,7 +94,6 @@ public class SetTest {
 
     }
 
-    @Test
     public void toOrderedListTestLarge(Set<Integer> testSet){
         assertEquals(0, testSet.toOrderedList().size());
 
@@ -119,7 +115,6 @@ public class SetTest {
         }
     }
     
-    @Test
     public void unionTest1(Set<Integer> testSet1, Set<Integer> testSet2){
         testSet1.add(1);
         testSet1.add(2);
@@ -146,7 +141,6 @@ public class SetTest {
         assertEquals(3, testSet2.size());
     }
     
-    @Test
     public void unionTest2(Set<Integer> testSet1, Set<Integer> testSet2){
         assertEquals(0, testSet1.union(testSet2).size());
 
@@ -184,7 +178,6 @@ public class SetTest {
         assertTrue(ansSet2.contains(200));
     }
 
-    @Test
     public void intersectionTest1(Set<Integer> testSet1, Set<Integer> testSet2){
         assertEquals(0, testSet1.intersection(testSet2).size());
 

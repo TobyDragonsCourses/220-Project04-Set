@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * No matter how many times the same item is added to a Set, 
  * it will only appear in the set once
  */
-public interface Set<T> {
+public interface Set<T extends Comparable<T>> {
     
     /**
      * @post Adds an item to the current set, if it is not already in the set.
